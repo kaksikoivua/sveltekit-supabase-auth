@@ -1,0 +1,9 @@
+services:
+  app:
+    container_name: sveltekit-supabase-auth
+    build: .
+    volumes:
+      - .:/home/kks/sveltekit-supabase-auth
+    ports:
+      - "5173:5173"
+    tty: true
